@@ -1,5 +1,10 @@
 # spotify-all-for-one-playlist
 
+Got several Spotify playlists you keep adding songs to, and wish there was
+one single playlist that always had everything from all of them in one
+place? This does that automatically, once a day, forever — no more manually
+copying tracks between playlists.
+
 Daily cron job that mirrors one Spotify playlist from the union of several
 source playlists. Add/remove a track in any source playlist, and it gets
 added/removed from the target playlist on the next run.
