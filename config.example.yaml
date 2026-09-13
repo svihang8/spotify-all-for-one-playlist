@@ -1,0 +1,4 @@
+target_playlist_id: "TARGET_PLAYLIST_ID"
+source_playlist_ids:
+  - "SOURCE_PLAYLIST_ID_A"
+  - "SOURCE_PLAYLIST_ID_B"

@@ -1,0 +1,20 @@
+[project]
+name = "spotify-all-for-one-playlist"
+version = "0.1.0"
+description = "Sync one Spotify playlist to mirror the union of several source playlists."
+requires-python = ">=3.12"
+dependencies = [
+    "spotipy>=2.24.0",
+    "pyyaml>=6.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.uv]
+package = false
