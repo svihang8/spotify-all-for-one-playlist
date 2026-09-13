@@ -90,6 +90,11 @@ https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=...
                                    ^^^^^^^^^^^^^^^^^^^^^^ this part
 ```
 
+In the Spotify app: open the playlist → **⋯** → **Share** → **Copy link to
+playlist**.
+
+![Copying a playlist link to get its ID](docs/images/04-get-playlist-id.png)
+
 ```yaml
 target_playlist_id: "TARGET_PLAYLIST_ID"
 source_playlist_ids:
