@@ -1,6 +1,6 @@
 """One-time manual script: log in once, print a refresh token.
 
-Run locally: uv run python scripts/authorize.py
+Run locally: uv run python -m scripts.authorize
 Paste the printed refresh token into the SPOTIFY_REFRESH_TOKEN secret.
 """
 
