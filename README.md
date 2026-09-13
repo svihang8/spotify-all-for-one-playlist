@@ -86,9 +86,12 @@ secret**. Add all three:
 
 ### 5. Configure playlists
 
-Copy `config.example.yaml` to `config.yaml` and fill in your playlist IDs.
-The ID is the part of a playlist's share link between `/playlist/` and any
-`?si=...`:
+```
+cp config.example.yaml config.yaml
+```
+
+Fill in your playlist IDs. The ID is the part of a playlist's share link
+between `/playlist/` and any `?si=...`:
 
 ```
 https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=...
