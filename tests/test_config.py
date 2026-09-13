@@ -26,7 +26,7 @@ def test_load_config_valid(tmp_path: Path) -> None:
 
     assert config == SyncConfig(
         target_playlist_id="target123",
-        source_playlist_ids=("sourceA", "sourceB"),
+        source_playlist_ids=frozenset({"sourceA", "sourceB"}),
     )
 
 

@@ -11,7 +11,7 @@ import yaml
 @dataclass(frozen=True)
 class SyncConfig:
     target_playlist_id: str
-    source_playlist_ids: tuple[str, ...]
+    source_playlist_ids: frozenset[str]
 
 
 def load_config(path: Path | str) -> SyncConfig:
@@ -27,5 +27,5 @@ def load_config(path: Path | str) -> SyncConfig:
 
     return SyncConfig(
         target_playlist_id=target_playlist_id,
-        source_playlist_ids=tuple(source_playlist_ids),
+        source_playlist_ids=frozenset(source_playlist_ids),
     )
