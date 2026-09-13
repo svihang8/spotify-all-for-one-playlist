@@ -6,13 +6,13 @@ from dataclasses import dataclass
 
 
 @dataclass(frozen=True)
-class Diff:
+class TrackDiff:
     to_add: frozenset[str]
     to_remove: frozenset[str]
 
 
-def compute_diff(current: frozenset[str], desired: frozenset[str]) -> Diff:
-    return Diff(
+def compute_diff(current: frozenset[str], desired: frozenset[str]) -> TrackDiff:
+    return TrackDiff(
         to_add=frozenset(desired - current),
         to_remove=frozenset(current - desired),
     )
