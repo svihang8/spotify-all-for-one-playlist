@@ -1,5 +1,7 @@
 # spotify-all-for-one-playlist
 
+[![Buy me a coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-svihang8-yellow.svg)](https://buymeacoffee.com/svihang8)
+
 Got several Spotify playlists you keep adding songs to, and wish there was
 one single playlist that always had everything from all of them in one
 place? This does that automatically, once a day, forever — no more manually
@@ -133,6 +135,9 @@ file path breaks the package-relative imports.
 ```
 uv run pytest -q
 ```
+
+If this saved you some manual playlist copying, you can
+[buy me a coffee](https://buymeacoffee.com/svihang8). Entirely optional.
 
 ## License
 
