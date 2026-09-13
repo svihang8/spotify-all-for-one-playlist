@@ -70,6 +70,11 @@ uv run python -m scripts.authorize
 This opens your browser for a one-time Spotify login/consent. After you
 approve, it prints a refresh token to the terminal — copy it.
 
+> **Refresh tokens expire after ~180 days.** When that happens the daily
+> cron run starts failing on auth. Fix: repeat this step to get a new
+> refresh token, then update the `SPOTIFY_REFRESH_TOKEN` secret (step 4).
+> Client ID/secret and `config.yaml` don't need to change.
+
 ### 4. Add GitHub Actions secrets
 
 In your repo: **Settings → Secrets and variables → Actions → New repository
