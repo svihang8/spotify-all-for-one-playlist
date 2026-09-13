@@ -1,5 +1,10 @@
 # spotify-all-for-one-playlist
 
+Got several Spotify playlists you keep adding songs to, and wish there was
+one single playlist that always had everything from all of them in one
+place? This does that automatically, once a day, forever — no more manually
+copying tracks between playlists.
+
 Daily cron job that mirrors one Spotify playlist from the union of several
 source playlists. Add/remove a track in any source playlist, and it gets
 added/removed from the target playlist on the next run.
@@ -84,6 +89,11 @@ The ID is the part of a playlist's share link between `/playlist/` and any
 https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=...
                                    ^^^^^^^^^^^^^^^^^^^^^^ this part
 ```
+
+In the Spotify app: open the playlist → **⋯** → **Share** → **Copy link to
+playlist**.
+
+![Copying a playlist link to get its ID](docs/images/04-get-playlist-id.png)
 
 ```yaml
 target_playlist_id: "TARGET_PLAYLIST_ID"
